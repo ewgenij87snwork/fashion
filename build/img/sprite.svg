@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 19">
-    <title>
-        facebook
-    </title>
-    <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><defs>
+        <style>
+            .cls-1{fill:#101820}
+        </style>
+    </defs><symbol id="icon-cart" viewBox="0 0 32 32">
+    
+    <title/>
+    <g data-name="Layer 61" id="Layer_61">
+        <path class="cls-1" d="M10 20a1 1 0 0 1-1-.8L6.66 7.41A3 3 0 0 0 3.72 5H2a1 1 0 0 1 0-2h1.72a5 5 0 0 1 4.9 4L11 18.8a1 1 0 0 1-.8 1.2z"/>
+        <path class="cls-1" d="M11 27H9.14a4.14 4.14 0 0 1-.38-8.26l18.41-1.67L28.78 9H8a1 1 0 0 1 0-2h22a1 1 0 0 1 .77.37 1 1 0 0 1 .23.83l-2 10a1 1 0 0 1-.89.8L8.94 20.74a2.13 2.13 0 0 0 .2 4.26H11a1 1 0 0 1 0 2z"/>
+        <path class="cls-1" d="M26 30a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm0-6a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"/>
+        <path class="cls-1" d="M14 30a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm0-6a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"/>
+        <path class="cls-1" d="M23 27h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z"/>
+    </g>
+</symbol><symbol id="icon-dots" viewBox="0 0 20 20">
+    <path d="M10 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+</symbol><symbol id="icon-search" viewBox="0 0 512 512">
+    <path d="M448.3 424.7L335 311.3c20.8-26 33.3-59.1 33.3-95.1 0-84.1-68.1-152.2-152-152.2-84 0-152 68.2-152 152.2s68.1 152.2 152 152.2c36.2 0 69.4-12.7 95.5-33.8L425 448l23.3-23.3zM120.1 312.6c-25.7-25.7-39.8-59.9-39.8-96.3s14.2-70.6 39.8-96.3 59.9-40 96.2-40c36.3 0 70.5 14.2 96.2 39.9s39.8 59.9 39.8 96.3-14.2 70.6-39.8 96.3c-25.7 25.7-59.9 39.9-96.2 39.9-36.3.1-70.5-14.1-96.2-39.8z"/>
 </symbol></svg>
