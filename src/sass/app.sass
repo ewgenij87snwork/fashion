@@ -9,10 +9,10 @@
 	font-size: 14px
 
 .container
-	width: 1000px
+	max-width: 1000px
 	margin: 0 auto
 	+r(1020) 
-		width: 100%
+		// width: 
 		margin: 0 20px
 
 .wrap
@@ -47,13 +47,24 @@
 		ul
 			li
 				display: inline-block
+				padding: 0 20px
+				&:first-child
+					padding-left: 0
 				a
-					margin-right: 20px
 					text-transform: uppercase
 					text-decoration: none
 					font-size: 14px 
-					color: #170F11 
-					
+					color: #170F11
+					&:after
+						content: '' 
+						display: block
+						width: 0
+						height: 2px
+						background: #170F11
+						transition: width .53s
+					&:hover::after
+						width: 100%
+						transition: width .53s										
 	&__icons
 		a
 			text-decoration: none
@@ -81,35 +92,68 @@
 
 ////////////////////////////////////////////////////////////////			
 .hero
-	position: relative
-	color: #a9765a 
-	display: flex
-	flex-direction: column
-	justify-content: center
-	align-items: start
-	padding-left: 0
 
+	.container
+		position: relative
+		color: #a9765a 
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: 100%
+		align-items: start
+		padding-left: 0
+		text-align: left
 	&__suptitle
 		font-size: 47px
 		margin-bottom: 25px
+		margin-top: 25px 
 		text-transform: uppercase
 		font-weight: normal 
+		+r(900) 
+			font-size: 45px
+		+r(550) 
+			font-size: 30px
+			margin-bottom: 15px
+		+r(410) 
+			font-size: 25px
+		
 	&__title, &__title>span
 		font-size: 77px
 		font-weight: normal
 		line-height: 1
 		text-transform: uppercase
+		+r(900) 
+			font-size: 68px
+			margin-bottom: 25px
+		+r(550) 
+			font-size: 50px
+		+r(410) 
+			font-size: 40px
+		
+		
 	&__title
 		margin-bottom: 35px
+		+r(725) 
+			text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff
+		
 		span
 			color: #170f11
 	&__text
 		font-size: 16px
 		line-height: 1.7
-		margin-bottom: 30px
+		margin-bottom: 70px
 		max-width: 60%
+		+r(410) 
+			max-width: 90%
+			font-size: 14px
+			line-height: 1.5
+			margin-bottom: 120px
+		
 
-.btn
+button
+	margin-top: 20px
+	position: absolute
+	bottom: 30px 
 	display: inline-block
 	color: #fff
 	background: #170F11  
@@ -119,6 +163,40 @@
 	font-weight: normal
 	line-height: 1
 	padding: 15px 30px
+	text-align: center
+	width: 180px
+	transition: 1s 
+	&:before,&:after
+		content: '' 
+		display: block
+		position: absolute
+		height: 100%
+		top: 0
+		filter: blur(30px) 
+	&:before
+		background: rgba(255,255,255, .5)
+		width: 60px
+		left: 0
+		opacity: .5
+		transform: translate(-130px) skewX(-15deg)
+	&:after
+		background: rgba(255,255,255, .2)
+		width: 30px
+		left: 30px
+		opacity: 0
+		transform: translate(-100px) scaleX(-15px)
+	&:hover
+		background: #a9765a
+		cursor: pointer
+	&:hover:before,&:hover:after
+		transform: translateX(200px) skewX(-15deg) 
+		opacity: .6
+		transition: .7s
+	&:hover:after
+		opacity: 1
+		
+		
+		
 ////////////////////////////////////////////////////////////////
 
 
@@ -143,14 +221,16 @@
 	.header__menu ul 
 	    position: absolute;
 	    top: 50%;
+	    right: 0
+	    background: #FFF 
 	    transform: translateY(-50%);
-	    width: 100%;
+	    // width: 100%;
 
 
 	.header__menu ul li 
 	    display: block;
 	    float: none;
-	    width: 100%;
+	    // width: 100%;
 	    text-align: right;
 	    margin-bottom: 10px;
 
@@ -184,7 +264,7 @@
 	    margin-left: 0;
 
 
-	.header__menu ul li a 
+	.header__menu ul li a
 	    padding: 10px 24px;
 	    opacity: 0;
 	    color: #a9765a;
@@ -193,19 +273,20 @@
 	    letter-spacing: 1.2px;
 	    transform: translateX(-20px);
 	    transition: all 0.2s ease;
+	    display: inline-block
 
 
 	.nav-btn 
-	    position: fixed;
-	    right: 10px;
-	    top: 10px;
-	    display: block;
-	    width: 48px;
-	    height: 48px;
-	    cursor: pointer;
-	    z-index: 9999;
-	    border-radius: 50%;
-
+		position: fixed;
+		right: 10px;
+		top: 10px;
+		display: block;
+		width: 48px;
+		height: 48px;
+		cursor: pointer;
+		z-index: 9999;
+		border-radius: 50%;
+		background: #eee
 
 	.nav-btn i 
 	    display: block;
