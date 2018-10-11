@@ -13,20 +13,28 @@ title: Fashion
 
 	<div class="header__bottom">
 		<div class="container">
-			<nav class="header__menu">
-				<ul>
-					<li><a href="#">Home </a></li>
-					<li><a href="#">Clothing </a></li>
-					<li><a href="#">Shoes & accessories </a></li>
-					<li><a href="#">Trends </a></li>
-					<li><a href="#">Highlights </a></li>
-					<li><a href="#">Outfits </a></li>
-				</ul>
+			<nav>
+				<input type="checkbox" id="nav" class="hidden"/>
+				<label for="nav" class="nav-btn">
+					<i></i>
+					<i></i>
+					<i></i>
+				</label>
+				<div class="header__menu">
+					<ul>
+						<li><a href="#">Home </a></li>
+						<li><a href="#">Clothing </a></li>
+						<li><a href="#">Shoes & accessories </a></li>
+						<li><a href="#">Trends </a></li>
+						<li><a href="#">Highlights </a></li>
+						<li><a href="#">Outfits </a></li>
+					</ul>
+				</div>
 			</nav>
 			<div class="header__icons">
 				<a href="#">{{mixins.icon('search')}}</a>
 				<a href="#" class="cart">
-					<div class="cart-number">15</div>
+					<div class="cart-number">4</div>
 					{{mixins.icon('cart')}}
 				</a>
 				<a href="#">{{mixins.icon('dots')}}</a>
