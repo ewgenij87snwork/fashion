@@ -69,9 +69,14 @@
 		a
 			text-decoration: none
 		.icon
-			fill: #000
+			fill: #170F11
 			font-size: 24px
 			margin-left: 20px
+			&:hover,
+				fill: #fff
+				border-radius: 50%
+				background: #170F11 
+				transition: all .64s ease-in-out
 		.cart
 			position: relative
 		.cart-number
@@ -83,6 +88,7 @@
 			color: #fff
 			background: #000
 			font-size: 10px
+			line-height: 1.2
 			padding: 1px 5px
 ////////////////////////////////////////////////////////////////
 
@@ -92,7 +98,6 @@
 
 ////////////////////////////////////////////////////////////////			
 .hero
-
 	.container
 		position: relative
 		color: #a9765a 
@@ -129,13 +134,11 @@
 			font-size: 50px
 		+r(410) 
 			font-size: 40px
-		
-		
+			
 	&__title
 		margin-bottom: 35px
-		+r(725) 
-			text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff
-		
+		+r(925) 
+			text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff	
 		span
 			color: #170f11
 	&__text
@@ -147,12 +150,11 @@
 			max-width: 90%
 			font-size: 14px
 			line-height: 1.5
-			margin-bottom: 120px
+			margin-bottom: 40px
 		
-
 button
 	margin-top: 20px
-	position: absolute
+	position: relative
 	bottom: 30px 
 	display: inline-block
 	color: #fff
@@ -206,7 +208,6 @@ button
 ////////////////////////////////////////////////////////////////
 @media screen and (max-width: 864px) 
 	.header__menu 
-
 	    position: fixed;
 	    top: 0;
 	    left: 0;
@@ -217,23 +218,18 @@ button
 	    opacity: 0;
 	    transition: all .8s ease;
 	      
-
 	.header__menu ul 
 	    position: absolute;
 	    top: 50%;
 	    right: 0
 	    background: #FFF 
 	    transform: translateY(-50%);
-	    // width: 100%;
-
 
 	.header__menu ul li 
 	    display: block;
 	    float: none;
-	    // width: 100%;
 	    text-align: right;
 	    margin-bottom: 10px;
-
 
 	.header__menu ul li:nth-child(1) a 
 	    transition-delay: 0.2s;
